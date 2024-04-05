@@ -57,23 +57,34 @@
 
 % START START START START START START START START START START START START START
 
-\begin{frame}{First difference: ChatGPT uses neural networks}
+\begin{frame}{First difference: LLMs use neural networks}
+\Large
 \vspace{0.35 cm}
 \begin{columns}
 \column{0.4\linewidth}
 \includegraphics[width=\linewidth]{neural-network-for-language.pdf}
 
-\column{0.6\linewidth}
-asdf
+\column{0.65\linewidth}
+First, we made a database of exact words.
+
+\vspace{0.5 cm}
+Using a neural network, LLMs encode sequences of meanings, not the exact words (or letters).
+
+\vspace{0.5 cm}
+This makes it more sensitive to synonyms.
 \end{columns}
 \end{frame}
 
-\begin{frame}{TITLE}
-\includegraphics[width=\linewidth]{cross-attention-in-french.pdf}
-\end{frame}
+\begin{frame}{Technique from language translation}
+\Large
+\vspace{0.35 cm}
+\begin{columns}
+\column{1.1\linewidth}
+\only<1>{\includegraphics[width=\linewidth]{cross-attention-in-french.pdf}}\only<2>{\includegraphics[width=\linewidth]{cross-attention-in-hindi.pdf}}
+\end{columns}
 
-\begin{frame}{TITLE}
-\includegraphics[width=\linewidth]{cross-attention-in-hindi.pdf}
+\vspace{0.25 cm}
+LLMs have a wide context window, but also a variable ``attention'' distribution that links related words over large distances.
 \end{frame}
 
 \end{document}
