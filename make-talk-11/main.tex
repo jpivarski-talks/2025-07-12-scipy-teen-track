@@ -118,7 +118,7 @@ Our context window was exactly 5 tokens long. LLMs train an ``attention'' distri
 \end{columns}
 \end{frame}
 
-\begin{frame}{Self-attention}
+\begin{frame}{Self-attention (from ``Tensor2Tensor Intro'' on Google Colab)}
 \Large
 \vspace{0.4 cm}
 \begin{columns}
@@ -158,11 +158,73 @@ Notice that ``it'' pays the most attention to the two nouns, but more to ``anima
 \vspace{0.2 cm}
 \begin{columns}
 \column{0.68\linewidth}
-After the big model (GPT-3) was trained on raw text completions, the neural network weights were re-fitted to optimize for helpfulness, as defined by 40 paid users (InstructGPT) and then a larger group for ChatGPT.
+After the big model (GPT-3) was trained on raw text completions, the neural network weights were re-fitted to optimize for helpfulness, as defined by 40 paid users (InstructGPT, and similarly for ChatGPT).
 
 \column{0.25\linewidth}
 \includegraphics[width=\linewidth]{Reinforcement_learning_diagram.pdf}
 \end{columns}
+\end{frame}
+
+\begin{frame}{How is autocomplete like and how is it unlike ChatGPT?}
+\large
+\vspace{0.5 cm}
+\textcolor{darkblue}{Similarities:}
+
+\vspace{0.1 cm}
+\begin{itemize}
+\item Like our Shakespearean autocomplete engine, LLMs are {\bf models} of word sequences that have been {\bf fitted} to {\bf measurements} of text written by humans (Common Crawl, WebText, Wikipedia, public domain books\ldots).
+\item<2-> They generate new text with word {\bf correlations} similar to what they've seen.
+\end{itemize}
+
+\vspace{0.5 cm}
+\uncover<3->{\textcolor{darkblue}{Differences:}}
+
+\vspace{0.1 cm}
+\begin{itemize}
+\item<3-> But LLMs are deep neural networks, not nearest-matches of n-grams.
+\item<4-> They use the ``attention'' mechanism to correlate relevant word pairs over large distances, to stay on topic.
+\item<5-> The training datasets and the numbers of parameters are huge.
+\item<6-> Chat-bots have been fine-tuned by human trainers for usefulness.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{\mbox{ }}
+\Large
+\vspace{0.5 cm}
+\begin{center}
+But those differences in scale and methodology don't change the fact that LLMs are fundamentally {\bf word correlation models}.
+
+\vspace{1 cm}
+\uncover<2->{We know (roughly) what went into them.}
+
+\vspace{1 cm}
+\uncover<3->{Therefore, when someone asks, ``can ChatGPT think like us?'' they're really asking whether we're \underline{\it not} word correlation models.}
+\end{center}
+\end{frame}
+
+\begin{frame}{Bibliography}
+\vspace{0.25 cm}
+\small
+
+\textcolor{darkblue}{Blogs}
+
+\begin{itemize}
+\item Andrej Karpathy; Unreasonable effectiveness of recurrent neural networks: \textcolor{blue}{\url{https://karpathy.github.io/2015/05/21/rnn-effectiveness/}}
+\item Andrej Karpathy's web demos: \textcolor{blue}{\url{https://cs.stanford.edu/people/karpathy/convnetjs/}}
+\item Jay Alammar; Visualizing machine learning: \textcolor{blue}{\url{https://jalammar.github.io/}}
+\item Huiming Song; Detailed comparison of OpenAI GPTs: \textcolor{blue}{\url{https://songhuiming.github.io/pages/2023/05/28/gpt-1-gpt-2-gpt-3-instructgpt-chatgpt-and-gpt-4-summary/}}
+\item Gregory Roberts; LLM training data sources: \textcolor{blue}{\url{https://gregoreite.com/drilling-down-details-on-the-ai-training-datasets/}}
+
+\end{itemize}
+
+\textcolor{darkblue}{Academic papers}
+
+\begin{itemize}
+\item Attention mechanism: \textcolor{blue}{\url{https://arxiv.org/abs/1409.0473}} (2014)
+\item Transformer model: \textcolor{blue}{\url{https://arxiv.org/abs/1706.03762}} (2017)
+\item Human fine-tuning: \textcolor{blue}{\url{https://arxiv.org/abs/2203.02155}} (2022)
+\end{itemize}
+
 \end{frame}
 
 \end{document}
