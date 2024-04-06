@@ -118,6 +118,22 @@ Our context window was exactly 5 tokens long. LLMs train an ``attention'' distri
 \end{columns}
 \end{frame}
 
+\begin{frame}{Self-attention}
+\Large
+\vspace{0.4 cm}
+\begin{columns}
+\column{0.63\linewidth}
+\only<1>{\includegraphics[width=\linewidth]{head-4/self-attention-01.png}}\only<2>{\includegraphics[width=\linewidth]{head-4/self-attention-02.png}}\only<3>{\includegraphics[width=\linewidth]{head-4/self-attention-03.png}}\only<4>{\includegraphics[width=\linewidth]{head-4/self-attention-04.png}}\only<5>{\includegraphics[width=\linewidth]{head-4/self-attention-05.png}}\only<6>{\includegraphics[width=\linewidth]{head-4/self-attention-06.png}}\only<7>{\includegraphics[width=\linewidth]{head-4/self-attention-07.png}}\only<8>{\includegraphics[width=\linewidth]{head-4/self-attention-08.png}}\only<9>{\includegraphics[width=\linewidth]{head-4/self-attention-09.png}}\only<10>{\includegraphics[width=\linewidth]{head-4/self-attention-10.png}}\only<11>{\includegraphics[width=\linewidth]{head-4/self-attention-11.png}}\only<12>{\includegraphics[width=\linewidth]{head-4/self-attention-12.png}}\only<13>{\includegraphics[width=\linewidth]{head-4/self-attention-13.png}}\only<14>{\includegraphics[width=\linewidth]{head-4/self-attention-14.png}}
+
+\column{0.4\linewidth}
+The attention mechanism, when applied to a single stream of text (not language translation), provides long-term context, i.e.\ memory.
+
+\large
+\vspace{0.5 cm}
+Notice that ``it'' pays the most attention to the two nouns, but more to ``animal'' than ``street.''
+\end{columns}
+\end{frame}
+
 \begin{frame}{$3^{\mbox{rd}}$ difference: LLMs are huge}
 \vspace{0.5 cm}
 \includegraphics[width=\linewidth]{llm-number-of-parameters.pdf}
@@ -142,7 +158,7 @@ Our context window was exactly 5 tokens long. LLMs train an ``attention'' distri
 \vspace{0.2 cm}
 \begin{columns}
 \column{0.68\linewidth}
-After the big model (GPT-3) was trained on raw text completions, the neural network weights were re-fitted to optimize for helpfulness, as defined by 40 paid users.
+After the big model (GPT-3) was trained on raw text completions, the neural network weights were re-fitted to optimize for helpfulness, as defined by 40 paid users (InstructGPT) and then a larger group for ChatGPT.
 
 \column{0.25\linewidth}
 \includegraphics[width=\linewidth]{Reinforcement_learning_diagram.pdf}
