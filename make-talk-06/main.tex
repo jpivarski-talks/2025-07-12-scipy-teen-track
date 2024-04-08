@@ -138,4 +138,87 @@ f[ a_{5,1}x_1 + a_{5,2}x_2 + \ldots a_{5,10}x_{10} + b_5 ] \\
 \end{columns}
 \end{frame}
 
+\begin{frame}{The non-linear function $f$}
+\small
+\vspace{0.5cm}
+\begin{columns}
+\column{0.2\linewidth}
+\includegraphics[width=\linewidth]{Activation_binary_step.pdf}
+
+\column{0.25\linewidth}
+binary step
+
+\vspace{-\baselineskip}
+\[ f(x) = \left\{ \begin{array}{c l}
+0 & \text{if } x < 0 \\
+1 & \text{if } x \ge 0 \\
+\end{array} \right. \]
+
+\column{0.2\linewidth}
+\includegraphics[width=\linewidth]{Activation_rectified_linear.pdf}
+
+\column{0.3\linewidth}
+rectified linear unit (ReLU)
+
+\vspace{-\baselineskip}
+\[ f(x) = \left\{ \begin{array}{c l}
+0 & \text{if } x < 0 \\
+x & \text{if } x \ge 0 \\
+\end{array} \right. \]
+\end{columns}
+
+\vspace{0.5cm}
+\begin{columns}
+\column{0.2\linewidth}
+\includegraphics[width=\linewidth]{Activation_logistic.pdf}
+
+\column{0.25\linewidth}
+logistic (soft step)
+
+\vspace{-\baselineskip}
+\[ f(x) = \frac{1}{1 + e^{-x}} \]
+
+\column{0.2\linewidth}
+\includegraphics[width=\linewidth]{Activation_prelu.pdf}
+
+
+\column{0.3\linewidth}
+``leaky'' ReLU
+
+\vspace{-\baselineskip}
+\[ f(x) = \left\{ \begin{array}{c l}
+\alpha x & \text{if } x < 0 \\
+x & \text{if } x \ge 0 \\
+\end{array} \right. \]
+\end{columns}
+
+\vspace{0.5cm}
+\begin{columns}
+\column{0.2\linewidth}
+\includegraphics[width=\linewidth]{Activation_tanh.pdf}
+
+\column{0.25\linewidth}
+hyperbolic tangent
+
+\vspace{-\baselineskip}
+\[ f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} \]
+
+\column{0.2\linewidth}
+\includegraphics[width=\linewidth]{Activation_swish.pdf}
+
+\column{0.3\linewidth}
+sigmoid linear unit (``swish'')
+
+\[ f(x) = \frac{x}{1 + e^{-x}} \]
+\end{columns}
+
+\large
+
+\vspace{0.5 cm}
+\ldots and many other choices.
+\end{frame}
+
+
+
+
 \end{document}
