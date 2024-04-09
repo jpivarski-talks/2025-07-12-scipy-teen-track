@@ -57,7 +57,7 @@
 
 % START START START START START START START START START START START START START
 
-\begin{frame}{\only<1>{Equation of a line (fitting $a$ and $b$ to measurements $y$ versus $x$)}\only<2>{Equation of a plane (height $y$ versus 2D coordinates $x_1$ and $x_2$)}\only<3>{Equation of a hyperplane (N-dimensional)}\only<4>{General linear transformation: many inputs, many outputs}\only<5>{Pass through function $f$ to make it non-linear (more on that later)}}
+\begin{frame}{\only<1>{Equation of a line (fitting $a$ and $b$ to measurements $y$ versus $x$)}\only<2>{Equation of a plane (height $y$ versus 2D coordinates $x_1$ and $x_2$)}\only<3>{Equation of a hyperplane (N-dimensional)}\only<4>{General linear transformation: many inputs, many outputs}\only<5>{Pass through function $f$ to make it non-linear}}
 \vspace{0.25 cm}
 \begin{onlyenv}<1>
 \begin{center}
@@ -108,50 +108,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}{Neural networks take inspiration from neurons in the brain}
-\begin{center}
-\includegraphics[width=0.9\linewidth]{real-neuron.pdf}
-\end{center}
-
-\vspace{-1cm}
-\begin{columns}
-\column{1.1\linewidth}
-\renewcommand{\arraystretch}{1.5}
-\scriptsize
-\[ f \left[ \mbox{\hspace{0.25 cm}} \underbrace{\left( \begin{array}{c c c c}
-a_{1,1} & a_{1,2} & \ldots & a_{1,10} \\
-a_{2,1} & a_{2,2} & \ldots & a_{2,10} \\
-a_{3,1} & a_{3,2} & \ldots & a_{3,10} \\
-a_{4,1} & a_{4,2} & \ldots & a_{4,10} \\
-a_{5,1} & a_{5,2} & \ldots & a_{5,10} \\
-\end{array} \vphantom{\vbox to 1.5cm{}} \right)}_{\text{free parameters in the fit}} \cdot \underbrace{\left( \begin{array}{c}
-x_1 \\
-x_2 \\
-\vdots \\
-x_{10} \\
-\end{array} \vphantom{\vbox to 1.5cm{}} \right)}_{\text{input values}} + \underbrace{\left( \begin{array}{c}
-b_1 \\
-b_2 \\
-b_3 \\
-b_4 \\
-b_5 \\
-\end{array} \vphantom{\vbox to 1.5cm{}} \right)}_{\text{free parameters}} \mbox{\hspace{0.25 cm}} \right] = \underbrace{\left( \begin{array}{c}
-y_1 \\
-y_2 \\
-y_3 \\
-y_4 \\
-y_5 \\
-\end{array} \vphantom{\vbox to 1.5cm{}} \right)}_{\text{output values}} = \begin{array}{c}
-f[ a_{1,1}x_1 + a_{1,2}x_2 + \ldots a_{1,10}x_{10} + b_1 ] \\
-f[ a_{2,1}x_1 + a_{2,2}x_2 + \ldots a_{2,10}x_{10} + b_2 ] \\
-f[ a_{3,1}x_1 + a_{3,2}x_2 + \ldots a_{3,10}x_{10} + b_3 ] \\
-f[ a_{4,1}x_1 + a_{4,2}x_2 + \ldots a_{4,10}x_{10} + b_4 ] \\
-f[ a_{5,1}x_1 + a_{5,2}x_2 + \ldots a_{5,10}x_{10} + b_5 ] \\
-\end{array} \]
-\end{columns}
-\end{frame}
-
-\begin{frame}{The non-linear function $f$}
+\begin{frame}{The non-linear function $f$ is called an ``activation function''}
 \small
 \vspace{0.5cm}
 \begin{columns}
@@ -227,8 +184,94 @@ sigmoid linear unit (``swish'')
 
 \large
 
-\vspace{0.5 cm}
-\ldots and many other choices.
+\vspace{0.75 cm}
+There are many choices, but ReLU is the simplest and most common.
+\end{frame}
+
+\begin{frame}{Neural networks take inspiration from neurons in the brain}
+\begin{center}
+\includegraphics[width=0.9\linewidth]{real-neuron.pdf}
+\end{center}
+
+\vspace{-1cm}
+\begin{columns}
+\column{1.1\linewidth}
+\renewcommand{\arraystretch}{1.5}
+\scriptsize
+\[ f \left[ \mbox{\hspace{0.25 cm}} \underbrace{\left( \begin{array}{c c c c}
+a_{1,1} & a_{1,2} & \ldots & a_{1,10} \\
+a_{2,1} & a_{2,2} & \ldots & a_{2,10} \\
+a_{3,1} & a_{3,2} & \ldots & a_{3,10} \\
+a_{4,1} & a_{4,2} & \ldots & a_{4,10} \\
+a_{5,1} & a_{5,2} & \ldots & a_{5,10} \\
+\end{array} \vphantom{\vbox to 1.5cm{}} \right)}_{\text{free parameters in the fit}} \cdot \underbrace{\left( \begin{array}{c}
+x_1 \\
+x_2 \\
+\vdots \\
+x_{10} \\
+\end{array} \vphantom{\vbox to 1.5cm{}} \right)}_{\text{input values}} + \underbrace{\left( \begin{array}{c}
+b_1 \\
+b_2 \\
+b_3 \\
+b_4 \\
+b_5 \\
+\end{array} \vphantom{\vbox to 1.5cm{}} \right)}_{\text{free parameters}} \mbox{\hspace{0.25 cm}} \right] = \underbrace{\left( \begin{array}{c}
+y_1 \\
+y_2 \\
+y_3 \\
+y_4 \\
+y_5 \\
+\end{array} \vphantom{\vbox to 1.5cm{}} \right)}_{\text{output values}} = \begin{array}{c}
+f[ a_{1,1}x_1 + a_{1,2}x_2 + \ldots a_{1,10}x_{10} + b_1 ] \\
+f[ a_{2,1}x_1 + a_{2,2}x_2 + \ldots a_{2,10}x_{10} + b_2 ] \\
+f[ a_{3,1}x_1 + a_{3,2}x_2 + \ldots a_{3,10}x_{10} + b_3 ] \\
+f[ a_{4,1}x_1 + a_{4,2}x_2 + \ldots a_{4,10}x_{10} + b_4 ] \\
+f[ a_{5,1}x_1 + a_{5,2}x_2 + \ldots a_{5,10}x_{10} + b_5 ] \\
+\end{array} \]
+\end{columns}
+\end{frame}
+
+\begin{frame}{Neural networks take inspiration from neurons in the brain}
+\vspace{0.16 cm}
+\begin{columns}
+\column{1.1\linewidth}
+\includegraphics[width=\linewidth]{real-neuron-layers.pdf}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Neural networks take inspiration from neurons in the brain}
+To do the same thing with our model, take the output of one ``activation + linear transform'' and use it as the input to the next:
+
+\vspace{1 cm}\only<4>{\vspace{-0.5 cm}}
+\begin{columns}
+\column{1.15\linewidth}
+\[ \only<1>{f \left( a^{\text{layer 1}}_{i,j} \cdot x_j + b^{\text{layer 1}}_i \right)}\only<2>{f \left( a^{\text{layer 2}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 1}}_{i,j} \cdot x_j + b^{\text{layer 1}}_i \right)$} + b^{\text{layer 2}}_i \right)}\only<3>{f \left( a^{\text{layer 3}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 2}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 1}}_{i,j} \cdot x_j + b^{\text{layer 1}}_i \right)$} + b^{\text{layer 2}}_i \right) $} + b^{\text{layer 3}}_i \right)}\only<4>{f \left( a^{\text{layer 4}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 3}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 2}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 1}}_{i,j} \cdot x_j + b^{\text{layer 1}}_i \right)$} + b^{\text{layer 2}}_i \right) $} + b^{\text{layer 3}}_i \right) $} + b^{\text{layer 4}}_i \right)} \]
+\end{columns}
+\end{frame}
+
+\begin{frame}{It's usually drawn like this}
+\vspace{0.25 cm}
+\includegraphics[width=\linewidth]{artificial-neural-network-layers.pdf}
+
+\vspace{0.25 cm}
+The lines indicate that every output from one layer is included in the linear transformation of the next layer.
+\end{frame}
+
+\begin{frame}{Neural networks take inspiration from neurons in the brain}
+\small
+\vspace{0.2 cm}
+\begin{columns}
+\column{0.4\linewidth}
+\includegraphics[width=\linewidth]{330-PSA-80-60_\(USN_710739\)_\(20897323365\).jpg}
+
+Frank Rosenblatt's perceptron machine (1958) attempted to recognize images of letters.
+
+\vspace{0.2 cm}
+The free parameters were adjusted with motors, and eventually learned left-versus-right.
+
+\column{0.6\linewidth}
+\includegraphics[width=\linewidth]{Organization_of_a_biological_brain_and_a_perceptron.png}
+\end{columns}
 \end{frame}
 
 
