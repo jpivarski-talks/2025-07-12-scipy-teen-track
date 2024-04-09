@@ -245,7 +245,7 @@ To do the same thing with our model, take the output of one ``activation + linea
 \vspace{1 cm}\only<4>{\vspace{-0.5 cm}}
 \begin{columns}
 \column{1.15\linewidth}
-\[ \only<1>{f \left( a^{\text{layer 1}}_{i,j} \cdot x_j + b^{\text{layer 1}}_i \right)}\only<2>{f \left( a^{\text{layer 2}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 1}}_{i,j} \cdot x_j + b^{\text{layer 1}}_i \right)$} + b^{\text{layer 2}}_i \right)}\only<3>{f \left( a^{\text{layer 3}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 2}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 1}}_{i,j} \cdot x_j + b^{\text{layer 1}}_i \right)$} + b^{\text{layer 2}}_i \right) $} + b^{\text{layer 3}}_i \right)}\only<4>{f \left( a^{\text{layer 4}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 3}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 2}}_{i,j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 1}}_{i,j} \cdot x_j + b^{\text{layer 1}}_i \right)$} + b^{\text{layer 2}}_i \right) $} + b^{\text{layer 3}}_i \right) $} + b^{\text{layer 4}}_i \right)} \]
+\[ \only<1>{f \left( a^{\text{layer 1}}_{i\mbox{,\,}j} \cdot x_j + b^{\text{layer 1}}_i \right)}\only<2>{f \left( a^{\text{layer 2}}_{i\mbox{,\,}j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 1}}_{i\mbox{,\,}j} \cdot x_j + b^{\text{layer 1}}_i \right)$} + b^{\text{layer 2}}_i \right)}\only<3>{f \left( a^{\text{layer 3}}_{i\mbox{,\,}j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 2}}_{i\mbox{,\,}j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 1}}_{i\mbox{,\,}j} \cdot x_j + b^{\text{layer 1}}_i \right)$} + b^{\text{layer 2}}_i \right) $} + b^{\text{layer 3}}_i \right)}\only<4>{f \left( a^{\text{layer 4}}_{i\mbox{,\,}j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 3}}_{i\mbox{,\,}j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 2}}_{i\mbox{,\,}j} \cdot \fbox{$\displaystyle f \left( a^{\text{layer 1}}_{i\mbox{,\,}j} \cdot x_j + b^{\text{layer 1}}_i \right)$} + b^{\text{layer 2}}_i \right) $} + b^{\text{layer 3}}_i \right) $} + b^{\text{layer 4}}_i \right)} \]
 \end{columns}
 \end{frame}
 
@@ -254,10 +254,10 @@ To do the same thing with our model, take the output of one ``activation + linea
 \includegraphics[width=\linewidth]{artificial-neural-network-layers.pdf}
 
 \vspace{0.25 cm}
-The lines indicate that every output from one layer is included in the linear transformation of the next layer.
+The lines indicate that every output from one layer is included in the linear transformation of the next layer. (``There's an $a_{i\mbox{,\,}j}$ for every $x_j$ and $y_i$.'')
 \end{frame}
 
-\begin{frame}{Neural networks take inspiration from neurons in the brain}
+\begin{frame}{Connectivism: automatic learning by tuning the $a_{i\mbox{,\,}j}$, $b_i$ parameters}
 \small
 \vspace{0.2 cm}
 \begin{columns}
@@ -267,12 +267,70 @@ The lines indicate that every output from one layer is included in the linear tr
 Frank Rosenblatt's perceptron machine (1958) attempted to recognize images of letters.
 
 \vspace{0.2 cm}
-The free parameters were adjusted with motors, and eventually learned left-versus-right.
+\begin{minipage}{1.1\linewidth}\raggedright
+The free parameters were adjusted with motors. This system eventually learned left-versus-right (not much more).
+\end{minipage}
 
 \column{0.6\linewidth}
 \includegraphics[width=\linewidth]{Organization_of_a_biological_brain_and_a_perceptron.png}
 \end{columns}
 \end{frame}
+
+\begin{frame}{More inspiration from nature: eye-neurons are not fully connected}
+\vspace{0.35 cm}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{eye-neurons.jpg}
+\end{center}
+
+\vspace{0.25 cm}
+Neurons in one layer are connected to only a few of the neurons in the next layer.
+\end{frame}
+
+\begin{frame}{``Convolutional'' (restricted) neural network}
+\vspace{0.25 cm}
+\includegraphics[width=\linewidth]{convolutional-neural-network-layers.pdf}
+
+\vspace{0.25 cm}
+This is like setting a lot of $a_{i\mbox{,\,}j}$, $b_i$ fit parameters to zero and not letting them be tuned in the fit.
+\end{frame}
+
+\begin{frame}{Kunihiko Fukushima's neocognitron (1980)}
+\vspace{0.15 cm}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{higher-order-features.png}
+\end{center}
+
+\vspace{0.15 cm}
+\begin{columns}
+\column{0.45\linewidth}
+\includegraphics[width=\linewidth]{convolutional-planes.png}
+
+\column{0.45\linewidth}
+\includegraphics[width=\linewidth]{convolutional-recognition.png}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Each layer of a neural network is more abstract than the last}
+\vspace{0.25 cm}
+\includegraphics[width=\linewidth]{convolutional-neural-network-layers-labeled.pdf}
+\end{frame}
+
+\begin{frame}{Fun fact: mice have hawk-shaped features in their visual networks}
+\small
+\vspace{0.5 cm}
+\begin{columns}
+\column{0.35\linewidth}
+\includegraphics[width=\linewidth]{mouse.png}
+
+\column{0.35\linewidth}
+\includegraphics[width=\linewidth]{hawk-shaped-features.jpg}
+\end{columns}
+
+\vspace{0.75 cm}
+Y.\ Zhang, I.\ Kim, J.\ Sanes, {\it The most numerous ganglion cell type of the mouse retina is a selective feature detector} (2012), \textcolor{blue}{\url{https://doi.org/10.1073/pnas.1211547109}}
+\end{frame}
+
+
 
 
 
