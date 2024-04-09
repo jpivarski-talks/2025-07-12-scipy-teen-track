@@ -257,7 +257,7 @@ To do the same thing with our model, take the output of one ``activation + linea
 The lines indicate that every output from one layer is included in the linear transformation of the next layer. (``There's an $a_{i\mbox{,\,}j}$ for every $x_j$ and $y_i$.'')
 \end{frame}
 
-\begin{frame}{Connectivism: automatic learning by tuning the $a_{i\mbox{,\,}j}$, $b_i$ parameters}
+\begin{frame}{Connectivism: automatic learning by fitting the $a_{i\mbox{,\,}j}$, $b_i$ parameters}
 \small
 \vspace{0.2 cm}
 \begin{columns}
@@ -291,7 +291,7 @@ Neurons in one layer are connected to only a few of the neurons in the next laye
 \includegraphics[width=\linewidth]{convolutional-neural-network-layers.pdf}
 
 \vspace{0.25 cm}
-This is like setting a lot of $a_{i\mbox{,\,}j}$, $b_i$ fit parameters to zero and not letting them be tuned in the fit.
+This sets a lot of $a_{i\mbox{,\,}j}$ parameters to zero and doesn't let them be tuned in the fit.
 \end{frame}
 
 \begin{frame}{Kunihiko Fukushima's neocognitron (1980)}
@@ -330,9 +330,26 @@ This is like setting a lot of $a_{i\mbox{,\,}j}$, $b_i$ fit parameters to zero a
 Y.\ Zhang, I.\ Kim, J.\ Sanes, {\it The most numerous ganglion cell type of the mouse retina is a selective feature detector} (2012), \textcolor{blue}{\url{https://doi.org/10.1073/pnas.1211547109}}
 \end{frame}
 
+\begin{frame}{These ideas have been studied for a long time}
+\vspace{0.2 cm}
+\begin{columns}
+\column{1.15\linewidth}
+\includegraphics[width=\linewidth]{ups-and-downs-of-ai.png}
+\end{columns}
+\end{frame}
 
+\begin{frame}{Why are neural networks only a big thing now?}
+\vspace{0.5 cm}
+\begin{enumerate}\setlength{\itemsep}{0.5 cm}
+\item<1-> At first, neural networks were much worse than ``symbolic'' (rule-based) approaches. Learning without explicit rules seemed like magical thinking or hype.
 
+\item<2-> Important algorithmic discoveries: gradient descent, backpropagation, ReLU activation, convolutional and recurrent topologies, Xavier initialization, transfer learning, batch normalization, dropout, the attention mechanism, \ldots
 
+\item<3-> Large enough datasets, already digitized, to expose all the nuances of human-like behaviors: the world wide web.
+
+\item<4-> Large enough compute farms and GPUs to analyze the above.
+\end{enumerate}
+\end{frame}
 
 
 \end{document}
