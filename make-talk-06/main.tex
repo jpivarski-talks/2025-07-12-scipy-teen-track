@@ -232,6 +232,14 @@ f[ a_{5,1}x_1 + a_{5,2}x_2 + \ldots a_{5,10}x_{10} + b_5 ] \\
 \end{frame}
 
 \begin{frame}{Neural networks take inspiration from neurons in the brain}
+\vspace{0.15 cm}
+\begin{columns}
+\column{1.2\linewidth}
+\includegraphics[width=\linewidth]{nerve-cells-sem-steve-gschmeissner.jpg}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Neural networks take inspiration from neurons in the brain}
 \vspace{0.16 cm}
 \begin{columns}
 \column{1.1\linewidth}
@@ -251,7 +259,7 @@ To do the same thing with our model, take the output of one ``activation + linea
 
 \begin{frame}{It's usually drawn like this}
 \vspace{0.25 cm}
-\includegraphics[width=\linewidth]{artificial-neural-network-layers.pdf}
+\only<1>{\includegraphics[width=\linewidth]{artificial-neural-network-layers.pdf}}\only<2>{\includegraphics[width=\linewidth]{artificial-neural-network-layers-2.pdf}}
 
 \vspace{0.25 cm}
 The lines indicate that every output from one layer is included in the linear transformation of the next layer. (``There's an $a_{i\mbox{,\,}j}$ for every $x_j$ and $y_i$.'')
@@ -350,6 +358,5 @@ Y.\ Zhang, I.\ Kim, J.\ Sanes, {\it The most numerous ganglion cell type of the 
 \item<4-> Large enough compute farms and GPUs to analyze the above.
 \end{enumerate}
 \end{frame}
-
 
 \end{document}
