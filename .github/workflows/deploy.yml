@@ -24,6 +24,10 @@ jobs:
         working-directory: site
         run: |
           jupyter lite build --output-dir dist
+      - name: Include gerrymandering-galaxy.svg
+        working-directory: site
+        run: |
+          cp files/img/gerrymandering-galaxy.svg dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
