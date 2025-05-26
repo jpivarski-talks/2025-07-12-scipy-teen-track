@@ -8,6 +8,6 @@ To follow the lecture and do the exercises, launch JupyterLite in your browser:
 
 <p align="center">
   <a href="https://jpivarski-talks.github.io/2025-07-12-scipy-teen-track/notebooks/index.html?path=workbook.ipynb">
-    <img src="https://jupyterlite.readthedocs.io/en/latest/_static/badge.svg" alt="Launch JupyterLite" height="40">
+    <img src="https://jupyterlite.readthedocs.io/en/latest/_static/badge.svg" alt="Launch JupyterLite" height="60">
   </a>
 </p>
