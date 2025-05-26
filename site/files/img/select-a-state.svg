@@ -68,7 +68,7 @@ function click_on_a_state(state) {
 </script>
   <path
      class="state-path-2"
-     onclick="doit('HI')"
+     onclick="click_on_a_state('HI')"
      id="HI2"
      style="font-size:12px;font-family:'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;font-variation-settings:normal;vector-effect:none;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
      d="m 150.82219,358.39981 48.64595,28.75805 25.76409,-0.001 v -28.84413 l -55.90098,-33.04504 -18.50963,-1.3e-4 z"
@@ -85,7 +85,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="AK"
-       onclick="doit('AK')"
+       onclick="click_on_a_state('AK')"
        inkscape:label="AK" />
     <path
        class="state-path"
@@ -94,7 +94,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="CA"
-       onclick="doit('CA')"
+       onclick="click_on_a_state('CA')"
        inkscape:label="CA" />
     <path
        class="state-path"
@@ -103,7 +103,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="ID"
-       onclick="doit('ID')"
+       onclick="click_on_a_state('ID')"
        inkscape:label="ID" />
     <path
        class="state-path"
@@ -112,7 +112,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="IL"
-       onclick="doit('IL')"
+       onclick="click_on_a_state('IL')"
        inkscape:label="IL" />
     <path
        class="state-path"
@@ -121,7 +121,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="IN"
-       onclick="doit('IN')"
+       onclick="click_on_a_state('IN')"
        inkscape:label="IN" />
     <path
        class="state-path"
@@ -130,7 +130,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="ME"
-       onclick="doit('ME')"
+       onclick="click_on_a_state('ME')"
        inkscape:label="ME" />
     <path
        class="state-path"
@@ -139,7 +139,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="MI"
-       onclick="doit('MI')"
+       onclick="click_on_a_state('MI')"
        inkscape:label="MI" />
     <path
        class="state-path"
@@ -148,7 +148,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="MT"
-       onclick="doit('MT')"
+       onclick="click_on_a_state('MT')"
        inkscape:label="MT" />
     <path
        class="state-path"
@@ -157,7 +157,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="NV"
-       onclick="doit('NV')"
+       onclick="click_on_a_state('NV')"
        inkscape:label="NV" />
     <path
        class="state-path"
@@ -166,7 +166,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="NM"
-       onclick="doit('NM')"
+       onclick="click_on_a_state('NM')"
        inkscape:label="NM" />
     <path
        class="state-path"
@@ -175,7 +175,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="NY"
-       onclick="doit('NY')"
+       onclick="click_on_a_state('NY')"
        inkscape:label="NY" />
     <path
        class="state-path"
@@ -184,7 +184,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="NC"
-       onclick="doit('NC')"
+       onclick="click_on_a_state('NC')"
        inkscape:label="NC" />
     <path
        class="state-path"
@@ -193,7 +193,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="ND"
-       onclick="doit('ND')"
+       onclick="click_on_a_state('ND')"
        inkscape:label="ND" />
     <path
        class="state-path"
@@ -202,7 +202,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="OH"
-       onclick="doit('OH')"
+       onclick="click_on_a_state('OH')"
        inkscape:label="OH" />
     <path
        class="state-path"
@@ -211,7 +211,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="OR"
-       onclick="doit('OR')"
+       onclick="click_on_a_state('OR')"
        inkscape:label="OR" />
     <path
        class="state-path"
@@ -220,7 +220,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="PA"
-       onclick="doit('PA')"
+       onclick="click_on_a_state('PA')"
        inkscape:label="PA" />
     <path
        class="state-path"
@@ -229,7 +229,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="SC"
-       onclick="doit('SC')"
+       onclick="click_on_a_state('SC')"
        inkscape:label="SC" />
     <path
        class="state-path"
@@ -238,7 +238,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="UT"
-       onclick="doit('UT')"
+       onclick="click_on_a_state('UT')"
        inkscape:label="UT" />
     <path
        class="state-path"
@@ -247,7 +247,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="VA"
-       onclick="doit('VA')"
+       onclick="click_on_a_state('VA')"
        inkscape:label="VA" />
     <path
        class="state-path"
@@ -256,7 +256,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="WA"
-       onclick="doit('WA')"
+       onclick="click_on_a_state('WA')"
        inkscape:label="WA" />
     <path
        class="state-path"
@@ -265,7 +265,7 @@ function click_on_a_state(state) {
        stroke-width="inherit"
        opacity="1"
        id="WV"
-       onclick="doit('WV')"
+       onclick="click_on_a_state('WV')"
        inkscape:label="WV" />
     <path
        class="state-path"
@@ -275,7 +275,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="VT"
-       onclick="doit('VT')"
+       onclick="click_on_a_state('VT')"
        inkscape:label="VT" />
     <path
        class="state-path"
@@ -285,7 +285,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="NH"
-       onclick="doit('NH')"
+       onclick="click_on_a_state('NH')"
        inkscape:label="NH" />
     <path
        class="state-path"
@@ -295,7 +295,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="MA"
-       onclick="doit('MA')"
+       onclick="click_on_a_state('MA')"
        inkscape:label="MA" />
     <path
        class="state-path"
@@ -305,7 +305,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="RI"
-       onclick="doit('RI')"
+       onclick="click_on_a_state('RI')"
        inkscape:label="RI" />
     <path
        class="state-path"
@@ -315,7 +315,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="CT"
-       onclick="doit('CT')"
+       onclick="click_on_a_state('CT')"
        inkscape:label="CT" />
     <path
        class="state-path"
@@ -325,7 +325,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="DE"
-       onclick="doit('DE')"
+       onclick="click_on_a_state('DE')"
        inkscape:label="DE" />
     <path
        class="state-path"
@@ -335,7 +335,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="MD"
-       onclick="doit('MD')"
+       onclick="click_on_a_state('MD')"
        inkscape:label="MD" />
     <path
        class="state-path"
@@ -345,7 +345,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="AZ"
-       onclick="doit('AZ')"
+       onclick="click_on_a_state('AZ')"
        inkscape:label="AZ" />
     <path
        class="state-path"
@@ -355,7 +355,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="MO"
-       onclick="doit('MO')"
+       onclick="click_on_a_state('MO')"
        inkscape:label="MO"
        sodipodi:insensitive="true" />
     <path
@@ -366,7 +366,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="MN"
-       onclick="doit('MN')"
+       onclick="click_on_a_state('MN')"
        inkscape:label="MN" />
     <path
        class="state-path"
@@ -376,7 +376,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="WI"
-       onclick="doit('WI')"
+       onclick="click_on_a_state('WI')"
        inkscape:label="WI" />
     <path
        class="state-path"
@@ -386,7 +386,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="KS"
-       onclick="doit('KS')"
+       onclick="click_on_a_state('KS')"
        inkscape:label="KS" />
     <path
        class="state-path"
@@ -396,7 +396,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="LA"
-       onclick="doit('LA')"
+       onclick="click_on_a_state('LA')"
        inkscape:label="LA" />
     <path
        d="m 651.36315,358.8432 0.21307,0.16629 0.24425,-0.0624 0.36897,0.0208 1.11211,0.38976 0.92503,0.46771 1.72014,1.08093 0.54566,0.54046 0.30141,0.40016 v 1.00298 l 0.0312,0.44692 0.29102,-0.0104 0.40015,-0.19228 0.30142,0.20267 0.14031,0.22866 -0.0312,0.47291 0.14031,0.29102 0.17669,0.26503 0.53008,0.4833 0.55605,0.23906 0.22346,0.18708 0.11953,0.22866 -0.0312,0.29621 -0.59243,0.73275 -0.46252,0.17669 -0.65479,0.63921 -0.44693,0.13511 -0.0156,0.12473 -0.37416,0.0935 -0.31701,0.23905 -1.14329,0.34299 -0.44173,-0.10394 -0.25464,-0.005 -0.22866,0.0727 -0.56645,0.38456 -0.19228,0.23386 -0.37417,0.10913 -0.37936,0.26504 -0.53008,0.30141 -0.1559,0.052 -0.45212,0.43653 -0.0779,0.17669 0.0156,0.40015 -0.51968,0.53007 -0.1663,0.46252 -0.1507,0.16629 -0.43653,0.37417 -0.0935,-0.052 0.005,-0.23905 -0.21826,-0.17669 -0.42614,-0.21826 -0.76393,-0.47811 -0.63401,-0.17149 -0.14031,-0.40015 -0.13511,-0.0416 -0.0832,-0.29102 -0.0832,-0.46251 0.11433,-0.55606 0.23385,-1.59021 -0.0208,-0.27543 -0.14032,-0.25465 -0.37936,-1.07573 -0.20787,-0.36378 0.026,-0.23905 -0.12472,-0.22346 -0.17669,-0.55606 -0.18189,-0.27023 -0.1559,-0.11952 -0.22866,-0.27024 -0.24945,-0.69117 0.21827,-0.56645 0.53526,-0.45212 0.0572,-0.20787 0.14551,-0.11953 0.43653,-0.1611 0.31181,-0.49369 0.23385,-0.41055 0.22866,-0.26503 0.1611,-0.005 0.11953,-0.4885 -0.0728,-0.20787 -0.17669,-0.1663 -0.36377,-0.55086 -0.15071,-0.4781 -0.0312,-0.74314 0.19748,-0.38456 0.13511,-0.12473 h 0.37417 l 0.9718,0.20788 0.27543,0.51967 0.40015,0.15591 0.26504,0.14551 0.18189,0.21826 0.24944,0.10914 m -9.66082,-4.26656 -0.10913,0.20267 h -0.29622 l -0.27543,-0.0468 -0.4885,0.10393 -0.33779,0.0364 -0.22346,-0.22346 0.12472,-0.1611 0.22346,-0.19228 0.60283,-0.36378 0.27543,-0.0987 0.21307,0.0208 0.26503,0.29622 -0.13511,0.3222 0.1611,0.10394 m -3.94436,-2.21384 -0.50409,0.026 -0.20787,-0.29622 -0.052,-0.25464 -0.0156,-0.45732 -0.0364,-0.23385 -0.17669,-0.10394 -0.43133,-0.17149 -0.12992,-0.20787 0.0832,-0.22866 0.24425,-0.12473 0.43133,-0.052 1.01337,0.14551 0.45732,0.41054 0.33259,0.37937 0.13512,0.3222 -0.0676,0.18189 -0.22346,0.34818 -0.46771,0.21307 -0.38456,0.10393 m 3.35712,-3.20121 0.0883,0.10393 0.40535,0.1611 0.0468,0.14031 0.12472,0.0364 0.026,0.27543 0.14551,0.12992 0.28583,0.49889 0.18188,-0.0156 0.11953,-0.13511 0.19748,0.005 0.57164,-0.0727 0.3326,-0.23905 0.1663,-0.0572 0.33259,-0.0156 0.57684,0.11953 0.1663,0.10393 0.052,0.12473 0.25464,0.27542 0.3274,0.25465 0.0104,0.0987 0.21307,-0.052 0.13512,0.10913 0.12472,0.22866 0.35858,0.052 0.35338,0.16629 0.50928,0.1663 0.23386,0.47291 -0.052,0.43133 -0.18708,0.34819 -0.25984,0.0727 -0.21307,0.31181 -0.28063,0.005 -0.56125,0.28582 -0.57684,-0.026 -0.19228,0.0104 -1.02377,0.49369 -0.51968,-0.11952 -0.13512,0.0364 -0.43653,0.0208 -0.29102,-0.27023 -0.17149,-0.25984 0.0883,-0.0728 0.005,-0.19747 -0.0832,-0.71716 -0.0831,-0.19748 0.005,-0.22346 -0.0676,-0.18189 -0.21826,-0.16629 -0.317,0.0727 -0.052,0.15071 -0.12992,0.026 -0.30142,-0.19228 -0.22865,-0.0416 -0.22347,-0.14032 -0.14551,0.0156 -0.38456,-0.44172 -0.28582,-0.37417 -0.0156,-0.23905 -0.10394,-0.12992 0.10394,-0.53008 0.0935,-0.25983 0.10913,-0.1715 0.12992,-0.0104 0.18709,-0.24425 0.20787,0.0208 0.18708,-0.0831 0.0832,0.052 m -6.83377,-2.1099 0.41055,0.0156 0.12991,0.0312 0.0832,0.12992 h 0.15591 l 1.50706,0.22866 0.40016,0.0156 0.14551,-0.30661 0.10393,-0.026 0.13512,0.18188 0.052,0.20787 0.52487,0.13512 0.51968,-0.0156 0.22866,-0.0312 0.25464,-0.0883 0.27543,0.005 0.25464,0.0676 0.10394,-0.0208 0.10394,0.12992 0.23905,0.0468 -0.19748,0.35858 -0.317,0.30661 -0.38976,0.21827 -0.38976,0.1611 -0.40015,0.0832 -0.40535,-0.0416 -0.40535,-0.0779 -0.80031,-0.21307 -0.49369,-0.17149 -1.19007,0.0831 -0.36897,0.0572 -0.51968,-0.0104 -0.20267,-0.078 -0.11953,-0.1611 -0.005,-0.20268 0.19747,-0.30661 0.18709,-0.0676 0.1663,-0.19748 0.052,-0.20787 -0.14031,-0.24425 0.11433,0.005 m -6.66748,-4.12105 0.0624,0.18708 0.11432,0.0624 0.0572,0.19228 0.18189,0.0156 0.17669,0.24425 v 0.24944 l -0.14032,0.0624 0.078,0.4833 0.22346,0.0832 0.17669,0.26504 0.1559,0.0572 0.12473,0.11953 0.16629,-0.21827 -0.1559,-0.10393 0.0156,-0.12472 0.11433,-0.052 0.41054,0.0831 -0.1507,0.1507 -0.0156,0.34819 0.17149,0.10393 0.1715,0.22866 -0.0468,0.12473 0.14551,0.29621 0.44173,0.26504 0.0624,0.0624 -0.4781,0.4781 -0.10913,0.0364 -0.0312,-0.17149 -0.0883,-0.0728 -0.49889,0.0935 -0.3274,0.19748 -0.23385,-0.0312 -0.13512,-0.21307 -0.50929,-0.22866 -0.1507,-0.26503 v -0.10394 l -0.21307,0.1663 0.10393,0.11953 -0.43133,0.026 0.0676,-0.0831 -0.24425,-0.0624 -0.0416,-0.34818 0.33259,-0.1611 0.0416,-0.0935 -0.29622,-0.18708 -0.0883,0.18189 -0.22866,-0.20788 0.0728,0.31181 -0.0572,0.0364 -0.317,-0.26504 0.0728,0.17669 0.38975,0.36378 -0.052,0.1663 -0.18709,0.0779 -0.99258,0.18708 -0.21827,-0.12472 -0.0883,-0.36897 -0.10914,-0.29102 -0.23385,-0.31701 -0.19228,-0.0987 -0.0468,-0.29102 -0.0676,-0.1559 -0.29102,-0.22866 -0.12472,-0.19228 -0.0156,-0.54046 -0.0676,-0.0987 -0.44173,-0.36897 0.44173,-0.10394 0.43653,-0.0208 0.75353,0.0156 0.0883,-0.19747 0.18708,-0.10394 0.30141,-0.23905 -0.0156,-0.0624 0.1715,-0.3222 0.37936,-0.3274 0.3274,-0.0935 0.20787,0.0572 0.29622,0.29622 0.18708,0.35338 -0.0468,0.19748 0.27023,0.317 m -23.81686,-2.21383 -0.13512,0.0416 -0.24944,-0.14031 -0.12473,-0.38976 0.0312,-0.24425 0.11433,-0.25464 0.41055,-0.40535 0.3274,-0.23905 0.42094,-0.23386 0.11433,-0.27543 -0.0104,-0.20267 0.18709,-0.0779 0.17669,0.005 0.19228,0.078 0.0883,0.19228 -0.21826,0.25464 -0.0779,0.23386 0.0727,0.29102 -0.14031,0.18708 -0.3326,0.1611 -0.19747,0.0572 -0.36897,0.25984 -0.078,0.1663 -0.20267,0.53527 m 8.41879,-4.74986 0.15071,0.0779 0.1611,-0.0104 0.19748,0.10913 0.0779,0.1663 0.19748,0.14551 0.10393,0.36377 0.0883,0.052 -0.026,0.42614 -0.0987,0.12992 -0.1507,0.41054 -0.15071,0.0831 -0.0208,0.30661 0.0416,0.40015 -0.0416,0.29102 -0.25984,0.052 0.11433,0.17669 -0.18188,0.0624 -0.1767,0.14551 -0.0728,0.12992 -0.38976,0.28063 -0.10913,0.11433 -0.45732,-0.1663 -0.49369,-0.026 -0.54047,-0.0987 -0.0883,-0.0831 -0.15071,0.10913 -0.0468,-0.0883 -0.25464,-0.15591 -0.16111,-0.28582 -0.11952,-0.0312 -0.14551,-0.14031 -0.20268,-0.0312 -0.28582,-0.12991 -0.37417,-0.0987 -0.11433,-0.29622 -0.1611,-0.15071 0.0104,-0.50928 0.10393,-0.0364 0.42614,-0.49369 0.0364,-0.27543 0.16629,-0.18189 0.50409,-0.12472 0.29622,-0.1715 0.18708,-0.1611 0.24425,-0.10913 0.0883,-0.10913 0.42613,-0.10394 0.10914,0.13512 0.39495,0.10913 v -0.1611 l 0.18709,-0.0728 0.42613,0.0364 0.21307,0.0624 0.20267,-0.14551 z"
@@ -405,7 +405,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="HI"
-       onclick="doit('HI')"
+       onclick="click_on_a_state('HI')"
        class="see-through"
        style="fill:#9228b9"
        inkscape:label="HI" />
@@ -417,7 +417,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="KY"
-       onclick="doit('KY')"
+       onclick="click_on_a_state('KY')"
        inkscape:label="KY" />
     <path
        class="state-path"
@@ -427,7 +427,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="TN"
-       onclick="doit('TN')"
+       onclick="click_on_a_state('TN')"
        inkscape:label="TN" />
     <path
        class="state-path"
@@ -437,7 +437,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="MS"
-       onclick="doit('MS')"
+       onclick="click_on_a_state('MS')"
        inkscape:label="MS" />
     <path
        class="state-path"
@@ -447,7 +447,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="GA"
-       onclick="doit('GA')"
+       onclick="click_on_a_state('GA')"
        inkscape:label="GA" />
     <path
        class="state-path"
@@ -457,7 +457,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="NJ"
-       onclick="doit('NJ')"
+       onclick="click_on_a_state('NJ')"
        inkscape:label="NJ" />
     <path
        class="state-path"
@@ -467,7 +467,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="FL"
-       onclick="doit('FL')"
+       onclick="click_on_a_state('FL')"
        inkscape:label="FL" />
     <path
        class="state-path"
@@ -477,7 +477,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="TX"
-       onclick="doit('TX')"
+       onclick="click_on_a_state('TX')"
        inkscape:label="TX" />
     <path
        class="state-path"
@@ -487,7 +487,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="AL"
-       onclick="doit('AL')"
+       onclick="click_on_a_state('AL')"
        inkscape:label="AL" />
     <path
        class="state-path"
@@ -497,7 +497,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="WY"
-       onclick="doit('WY')"
+       onclick="click_on_a_state('WY')"
        inkscape:label="WY" />
     <path
        class="state-path"
@@ -507,7 +507,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="NE"
-       onclick="doit('NE')"
+       onclick="click_on_a_state('NE')"
        inkscape:label="NE" />
     <path
        class="state-path"
@@ -517,7 +517,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="OK"
-       onclick="doit('OK')"
+       onclick="click_on_a_state('OK')"
        inkscape:label="OK" />
     <path
        class="state-path"
@@ -527,7 +527,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="CO"
-       onclick="doit('CO')"
+       onclick="click_on_a_state('CO')"
        inkscape:label="CO" />
     <path
        class="state-path"
@@ -537,7 +537,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="SD"
-       onclick="doit('SD')"
+       onclick="click_on_a_state('SD')"
        inkscape:label="SD" />
     <path
        class="state-path"
@@ -547,7 +547,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="AR"
-       onclick="doit('AR')"
+       onclick="click_on_a_state('AR')"
        inkscape:label="AR" />
     <path
        class="state-path"
@@ -557,7 +557,7 @@ function click_on_a_state(state) {
        opacity="1"
        data-z-index="0"
        id="IA"
-       onclick="doit('IA')"
+       onclick="click_on_a_state('IA')"
        inkscape:label="IA" />
   </g>
   <g
