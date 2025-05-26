@@ -2,9 +2,8 @@
 <svg
    version="1.1"
    style="font-size:12px;font-family:'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, sans-serif"
-   width="613.53436"
-   height="392.15787"
    viewBox="0 0 613.53436 392.15787"
+   preserveAspectRatio="xMidYMid meet"
    id="svg663"
    sodipodi:docname="select-a-state.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -61,7 +60,7 @@
 <script>
   // <![CDATA[
 
-function doit(state) {
+function click_on_a_state(state) {
   console.log(state);
 }
 
