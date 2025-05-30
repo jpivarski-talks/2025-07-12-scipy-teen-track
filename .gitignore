@@ -1,6 +1,7 @@
 #*#
 *~
 
+site/files/.jupyter
 .ipynb_checkpoints
 __pycache__
 
@@ -19,3 +20,4 @@ main.synctex*
 main.toc
 main.vrb
 _minted-main
+.DS_Store
