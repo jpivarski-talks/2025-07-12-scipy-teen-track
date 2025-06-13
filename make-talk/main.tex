@@ -115,7 +115,7 @@
 \end{frame}
 
 \begin{frame}{I'm part of a group within the DSI that helps 11th Hour projects}
-\vspace{0.35 cm}
+\vspace{0.25 cm}
 \begin{columns}
 \column{0.87\linewidth}
 \includegraphics[width=\linewidth]{img/uchicago-dsi-11thhour-website.png}
@@ -130,34 +130,86 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}{A learning experience for me!}
-\vspace{0.25 cm}
-I've mostly been working on electoral precinct maps and address data, to help Native Americans comply with a new voter ID requirement in North Dakota. (Reservations don't get door-to-door mail delivery, so many people don't know their exact street address, but now it's required for voting.)
-
-\vspace{0.75 cm}
-\begin{uncoverenv}<2->
-But recently, the Turtle Mountain Chippewa and Spirit Lake Sioux scored a major victory in overturning a blatent case of gerrymandering.
-
-\vspace{0.25 cm}
-\scriptsize
+\begin{frame}{Problems that keep Native Americans from voting}
+\vspace{0.5 cm}
+\begin{itemize}\setlength{\itemsep}{0.5 cm}
+\item<1-> New voter ID requirement in North Dakota.
 \begin{itemize}
+\item<2-> People without a house number on their tribal ID card are turned away at the polls.
+\item<3-> The U.S. mail doesn't deliver to most houses on reservations, so house numbers aren't in common use---most people don't know their full address.
+\item<4-> Addresses do exist (maintained by the 911 commissioners), so this is a data access problem that we're working on.
+\end{itemize}
+\item<5-> Long distance to polls (up to 80 miles!), gas money, time off work, daycare.
+\item<6-> Distrust, due to historical disenfranchisement. \\ (It wasn't until 1958 that voting became legal for tribes in North Dakota!)
+\item<7-> Gerrymandering. Recently, the Turtle Mountain Chippewa and Spirit Lake Sioux scored a major victory in overturning a blatant case of gerrymandering:
+\begin{itemize}\scriptsize
 \item \textcolor{blue}{\url{https://narf.org/cases/north-dakota-redistricting-map/}}
 \item \textcolor{blue}{\url{https://ndnativevote.org/wp-content/uploads/Redistricting-Guide.pdf}}
 \end{itemize}
-\end{uncoverenv}
-
-\normalsize
-\vspace{0.25 cm}
-\uncover<3->{I think it's a great illustration of how math, computing, and data analysis can be applied problems of justice, so let's get started!}
+\end{itemize}
 \end{frame}
 
-\begin{frame}{asdf}
-\vspace{0.5 cm}
+\begin{frame}{What is gerrymandering?}
+\vspace{0.25 cm}
 \begin{columns}
-\column{1.1\linewidth}
-\only<1>{\includegraphics[width=\linewidth]{img/district-before-2022.png}}\only<2>{\includegraphics[width=\linewidth]{img/district-in-2022.png}}\only<3>{\includegraphics[width=\linewidth]{img/district-after-2022.png}}
+\column{0.55\linewidth}
+\includegraphics[width=\linewidth]{img/the-gerry-mander.png}
+
+\column{0.5\linewidth}
+In 1812, governor of Massachusetts Elbridge Gerry defined legislative districts that gave his political party an advantage.
+
+\vspace{0.25 cm}
+One of these districts was so contorted that it was called the Gerry-Mander after a mythological salamander.
 \end{columns}
 \end{frame}
+
+\begin{frame}{What is gerrymandering?}
+\vspace{0.35 cm}
+\centering \includegraphics[width=0.8\linewidth]{img/mass-districts-1812.jpg}
+\end{frame}
+
+\begin{frame}{Washington Post's ``crimes against geography'' (2014)}
+\vspace{0.35 cm}
+\centering \includegraphics[width=0.8\linewidth]{img/crimes-against-geography.png}
+\end{frame}
+
+\begin{frame}{Why does shape matter?}
+\vspace{0.3 cm}
+\begin{columns}
+\column{0.35\linewidth}
+\includegraphics[width=\linewidth]{img/gerrymandering-competitive.pdf}
+
+\centering {\bf Competitive}
+
+Four districts are drawn without favoring any group. \phantom{Here is more text.}
+
+\column{0.35\linewidth}
+\includegraphics[width=\linewidth]{img/gerrymandering-packing.pdf}
+
+\centering {\bf Packing}
+
+One district absorbs all the purple so that greens can win the others.
+
+\column{0.35\linewidth}
+\includegraphics[width=\linewidth]{img/gerrymandering-cracking.pdf}
+
+\centering {\bf Cracking}
+
+Greens are split up so that they're less than a majority in most of the districts.
+
+\end{columns}
+\end{frame}
+
+
+
+
+%% \begin{frame}{asdf}
+%% \vspace{0.5 cm}
+%% \begin{columns}
+%% \column{1.1\linewidth}
+%% \only<1>{\includegraphics[width=\linewidth]{img/district-before-2022.png}}\only<2>{\includegraphics[width=\linewidth]{img/district-in-2022.png}}\only<3>{\includegraphics[width=\linewidth]{img/district-after-2022.png}}
+%% \end{columns}
+%% \end{frame}
 
 \end{document}
 
