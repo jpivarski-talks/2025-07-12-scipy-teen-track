@@ -27,7 +27,7 @@ jobs:
       - name: Include gerrymandering-galaxy.svg
         working-directory: site
         run: |
-          cp files/img/*.svg dist
+          cp -a files/img dist/img
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
