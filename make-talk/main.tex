@@ -60,12 +60,12 @@
 \begin{frame}{Who am I?}
 \vspace{0.5 cm}
 \begin{itemize}
-\item<1-> Particle physicist: helped get the LHC ready to discover the Higgs boson, did some precision studies and some exotic particle searches (didn't find any!).
+\item<1-> Particle physicist: I helped to get the LHC ready to discover the Higgs boson, did some precision studies, and searched for some exotic particles (didn't find any).
 \item<2-> Data scientist: mid-career detour, or rather a back-and-forth between commercial, academic, and now philanthropic data science.
 \end{itemize}
 
 \vspace{0.25 cm}
-\uncover<3->{\textcolor{darkblue}{$\longrightarrow$ A science/math/computing education doesn't lock you into a specific career.}}
+\uncover<3->{\textcolor{darkorange}{\bf An education in science/math/computing doesn't lock you into a specific career.\hspace{-1 cm}}}
 
 \vspace{0.25 cm}
 \begin{columns}
@@ -130,21 +130,22 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}{Problems that keep Native Americans from voting}
+\begin{frame}{Issues that keep Native Americans from voting}
 \vspace{0.5 cm}
-\begin{itemize}\setlength{\itemsep}{0.5 cm}
+\begin{itemize}\setlength{\itemsep}{0.35 cm}
 \item<1-> New voter ID requirement in North Dakota.
 \begin{itemize}
 \item<2-> People without a house number on their tribal ID card are turned away at the polls.
 \item<3-> The U.S. mail doesn't deliver to most houses on reservations, so house numbers aren't in common use---most people don't know their full address.
-\item<4-> Addresses do exist (maintained by the 911 commissioners), so this is a data access problem that we're working on.
+\item<4-> Addresses do exist (maintained by the 911 commissioners), so this is a data access problem that we can do (and are doing) something about.
 \end{itemize}
-\item<5-> Long distance to polls (up to 80 miles!), gas money, time off work, daycare.
-\item<6-> Distrust, due to historical disenfranchisement. \\ (It wasn't until 1958 that voting became legal for tribes in North Dakota!)
+\item<5-> Long distance to polls (up to 80 miles), gas money, time off work, daycare.
+\item<6-> Distrust, due to historical disenfranchisement. \\ (Members of Native tribes couldn't vote in North Dakota until 1958!)
 \item<7-> Gerrymandering. Recently, the Turtle Mountain Chippewa and Spirit Lake Sioux scored a major victory in overturning a blatant case of gerrymandering:
 \begin{itemize}\scriptsize
 \item \textcolor{blue}{\url{https://narf.org/cases/north-dakota-redistricting-map/}}
 \item \textcolor{blue}{\url{https://ndnativevote.org/wp-content/uploads/Redistricting-Guide.pdf}}
+\item \mbox{\textcolor{blue}{\url{https://ballotpedia.org/Redistricting_in_North_Dakota_after_the_2020_census}}\hspace{-2 cm}}
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -159,7 +160,7 @@
 In 1812, governor of Massachusetts Elbridge Gerry defined legislative districts that gave his political party an advantage.
 
 \vspace{0.25 cm}
-One of these districts was so contorted that it was called the Gerry-Mander after a mythological salamander.
+One of these districts was so contorted that it was called ``The Gerry-Mander'' after a mythological salamander.
 \end{columns}
 \end{frame}
 
@@ -195,21 +196,226 @@ One district absorbs all the purple so that greens can win the others.
 
 \centering {\bf Cracking}
 
-Greens are split up so that they're less than a majority in most of the districts.
+Greens are distributed so that they're less than a majority in most of the districts.
 
 \end{columns}
 \end{frame}
 
+\begin{frame}{On to the first project!}
+\vspace{0.25 cm}
+\begin{columns}
+\column{0.9\linewidth}
+\includegraphics[width=\linewidth]{img/jupyter-gerrymandering.png}
+\end{columns}
+\end{frame}
 
+\begin{frame}{So, what about North Dakota?}
+\vspace{0.5 cm}
+\begin{columns}
+\column{1.1\linewidth}
+\only<1>{For decades, North Dakota's legislative District 9 represented the Turtle Mountain Reservation.}\only<2>{In 2022, it was extended east for the Senate and Representatives were split between 9A and 9B.}\only<3>{The Turtle Mountain Chippewa and Spirit Lake Sioux successfully sued for a better district.}
 
+\vspace{0.25 cm}
+\only<1>{\includegraphics[width=\linewidth]{img/district-before-2022.png}}\only<2>{\includegraphics[width=\linewidth]{img/district-in-2022.png}}\only<3>{\includegraphics[width=\linewidth]{img/district-after-2022.png}}
+\end{columns}
 
-%% \begin{frame}{asdf}
-%% \vspace{0.5 cm}
-%% \begin{columns}
-%% \column{1.1\linewidth}
-%% \only<1>{\includegraphics[width=\linewidth]{img/district-before-2022.png}}\only<2>{\includegraphics[width=\linewidth]{img/district-in-2022.png}}\only<3>{\includegraphics[width=\linewidth]{img/district-after-2022.png}}
-%% \end{columns}
-%% \end{frame}
+\begin{onlyenv}<1-2>
+\vspace{-1.35 cm}
+\hfill\fcolorbox{black}{white}{\begin{minipage}{4.15 cm}
+\scriptsize
+\textcolor{darkorange}{Orange:} Native/total population
+
+\textcolor{violet}{Purple dots:} total population
+
+\textcolor{blue}{Blue lines:} district borders
+\end{minipage}}\hspace{-0.5 cm}
+\vspace{1.35 cm}
+\end{onlyenv}\begin{onlyenv}<3>
+\vspace{-6.25 cm}
+\hfill\fcolorbox{black}{white}{\begin{minipage}{4.15 cm}
+\scriptsize
+\textcolor{darkorange}{Orange:} Native/total population
+
+\textcolor{violet}{Purple dots:} total population
+
+\textcolor{blue}{Blue lines:} district borders
+\end{minipage}}\hspace{-0.5 cm}
+\vspace{6.25 cm}
+\end{onlyenv}
+\end{frame}
+
+\begin{frame}{So, what about North Dakota?}
+\vspace{0.35 cm}
+\begin{columns}
+\column{0.5\linewidth}
+\includegraphics[width=\linewidth]{img/district-after-2022-whole.png}
+
+\vspace{-7.6 cm}
+\hfill\fcolorbox{black}{white}{\begin{minipage}{4.15 cm}
+\scriptsize
+\textcolor{darkorange}{Orange:} Native/total population
+
+\textcolor{violet}{Purple dots:} total population
+
+\textcolor{blue}{Blue lines:} district borders
+\end{minipage}}\hspace{-1 cm}
+\vspace{7.6 cm}
+
+\column{0.5\linewidth}
+It's actually a long, skinny district that includes both the Turtle Mountain and Spirit Lake Reservations.
+
+\vspace{0.25 cm}
+\uncover<2->{This is a majority-minority district: most of its members are Native American, but Native Americans are a minority of the state overall.}
+
+\begin{uncoverenv}<3->
+\vspace{0.25 cm}
+Such districts are legally required if the minority is large, geographically compact, and politically cohesive.
+
+\scriptsize
+\begin{itemize}
+\item Voting Rights Act (1965)
+\item Thornburg vs.\ Gingles (1986)
+\end{itemize}
+\end{uncoverenv}
+\end{columns}
+\end{frame}
+
+\begin{frame}{There are many measures of fairness (davesredistricting.org)}
+\vspace{0.5 cm}
+\begin{columns}
+\column{0.35\linewidth}
+\centering {\bf Most competitive}
+
+\includegraphics[width=\linewidth]{img/nd-districts-most-competitive.png}
+
+\vspace{-2.1 cm}
+\begin{minipage}{2.7 cm}\scriptsize\bf
+Relative voter power:
+\begin{tabular}{l c}
+White & 0.80 \\
+Native & 2.42 \\
+\end{tabular}
+\end{minipage}
+\vspace{2.1 cm}
+
+\column{0.35\linewidth}
+\centering {\bf Least splitting}
+
+\includegraphics[width=\linewidth]{img/nd-districts-least-splitting.png}
+
+\vspace{-2.1 cm}
+\begin{minipage}{2.7 cm}\scriptsize\bf
+Relative voter power:
+\begin{tabular}{l c}
+White & 0.84 \\
+Native & 1.98 \\
+\end{tabular}
+\end{minipage}
+\vspace{2.1 cm}
+
+\column{0.35\linewidth}
+\centering {\bf Most proportional}
+
+\includegraphics[width=\linewidth]{img/nd-districts-most-proportional.png}
+
+\vspace{-2.1 cm}
+\begin{minipage}{2.7 cm}\scriptsize\bf
+Relative voter power:
+\begin{tabular}{l c}
+White & 0.86 \\
+Native & 1.56 \\
+\end{tabular}
+\end{minipage}
+\vspace{2.1 cm}
+\end{columns}
+
+\vspace{-0.6 cm}
+\begin{columns}
+\column{0.35\linewidth}
+\centering {\bf Most compact}
+
+\includegraphics[width=\linewidth]{img/nd-districts-most-compact.png}
+
+\vspace{-2.1 cm}
+\begin{minipage}{2.7 cm}\scriptsize\bf
+Relative voter power:
+\begin{tabular}{l c}
+White & 0.86 \\
+Native & 2.27 \\
+\end{tabular}
+\end{minipage}
+\vspace{2.1 cm}
+
+\column{0.35\linewidth}
+\centering {\bf Actual 2024 map}
+
+\includegraphics[width=\linewidth]{img/nd-districts-2024.png}
+
+\vspace{-2.1 cm}
+\begin{minipage}{2.7 cm}\scriptsize\bf
+Relative voter power:
+\begin{tabular}{l c}
+White & 0.95 \\
+Native & 0.61 \\
+\end{tabular}
+\end{minipage}
+\vspace{2.1 cm}
+\end{columns}
+\end{frame}
+
+\begin{frame}{But let's focus on geometric considerations}
+\vspace{0.5 cm}
+
+{\bf Polsby-Popper:} The most ``compact,'' least ``salamander'' shape is a circle because a circle has the smallest perimeter for a given area.
+
+\begin{uncoverenv}<2->
+\[ \mbox{area of a circle} = A = \pi r^2 \]
+
+\vspace{-0.5 cm}
+\[ \mbox{perimeter (circumference) of a circle} = P = 2 \pi r \]
+\end{uncoverenv}
+
+\vspace{-0.5 cm}
+\[ \uncover<3->{\frac{A}{P^2} =} \uncover<4->{\frac{\pi r^2}{4 \pi^2 r^2} =} \uncover<5->{\frac{1}{4 \pi}} \]
+
+\begin{uncoverenv}<6->
+\vspace{0.25 cm}
+So if we define
+
+\vspace{-0.1 cm}
+\[ \mbox{Polsby-Popper score} = 4 \pi \frac{\mbox{area}}{\mbox{perimeter}^2} \]
+
+\vspace{0.1 cm}
+this score is 1 for a circle and less than one for any other shape.
+\end{uncoverenv}
+\end{frame}
+
+\begin{frame}{There are others\ldots}
+\vspace{0.5 cm}
+\begin{itemize}
+\item Polsby-Popper: $4 \pi\, \mbox{area} / \mbox{perimeter}^2$
+\item Schwartzberg: $2 \pi \sqrt{\mbox{area} / \pi} / \mbox{perimeter}$
+\item Reock: $\mbox{area} / \mbox{area of minimum bounding circle}$
+\item Box Reock: $\mbox{area} / \mbox{area of minium bounding rectangle}$
+\item Convex Hull: $\mbox{area} / \mbox{area of a ``shrink wrapped'' shape around the district}$
+\item Skew: $\mbox{area of maximum inscribed circle} / \mbox{area of minimum bounding circle}$
+\item Length-Width: $\mbox{width} / \mbox{length}$ of the bounding box
+\item X-Symmetry, Y-Symmetry\ldots
+\item Boyce-Clark\ldots
+\item Fryer-Holden\ldots
+\item Edges Removed\ldots
+\item Fraction Kept\ldots
+\item Log Spanning Tree\ldots
+\end{itemize}
+\end{frame}
+
+\begin{frame}{But now, let's get to work!}
+\vspace{0.35 cm}
+\begin{columns}
+\column{0.9\linewidth}
+\includegraphics[width=\linewidth]{img/jupyter-fair-geometry.png}
+\end{columns}
+\end{frame}
 
 \end{document}
 
@@ -217,14 +423,14 @@ Greens are split up so that they're less than a majority in most of the district
 %% https://narf.org/cases/north-dakota-redistricting-map/
 %% https://ndnativevote.org/wp-content/uploads/Redistricting-Guide.pdf
 
-%% 0	White	nd-2024-state-senate	0.948228
-%% 1	White	nd-2020-state-senate-most_competitive	0.804343
-%% 2	White	nd-2020-state-senate-least_splitting	0.844429
-%% 3	White	nd-2020-state-senate-most_proportional	0.856983
-%% 4	White	nd-2020-state-senate-most_compact	0.857474
+%% 0	White	nd-2024-state-senate	0.95
+%% 1	White	nd-2020-state-senate-most_competitive	0.80
+%% 2	White	nd-2020-state-senate-least_splitting	0.84
+%% 3	White	nd-2020-state-senate-most_proportional	0.86
+%% 4	White	nd-2020-state-senate-most_compact	0.86
 
-%% 20	Native	nd-2024-state-senate	0.610402
-%% 21	Native	nd-2020-state-senate-most_competitive	2.421122
-%% 22	Native	nd-2020-state-senate-least_splitting	1.978296
-%% 23	Native	nd-2020-state-senate-most_proportional	1.556502
-%% 24	Native	nd-2020-state-senate-most_compact	2.268171
+%% 20	Native	nd-2024-state-senate	0.61
+%% 21	Native	nd-2020-state-senate-most_competitive	2.42
+%% 22	Native	nd-2020-state-senate-least_splitting	1.98
+%% 23	Native	nd-2020-state-senate-most_proportional	1.56
+%% 24	Native	nd-2020-state-senate-most_compact	2.27
